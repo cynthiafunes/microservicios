@@ -1,3 +1,4 @@
+import sqlite3  # Asegúrate de que esta línea esté presente
 from db_utils import get_db  # Importa get_db para reutilizarla
 
 def agregar_articulo(producto_id, cantidad):

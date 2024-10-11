@@ -1,7 +1,9 @@
 import sqlite3
 from flask import Flask
+import os
 
-DATABASE = 'inventario.db'
+# Cambia la ruta a la base de datos dentro de la carpeta del microservicio
+DATABASE = os.path.join(os.path.dirname(__file__), 'inventario.db')
 
 def get_db():
     db = sqlite3.connect(DATABASE)
